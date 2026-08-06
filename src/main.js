@@ -382,20 +382,9 @@ function applyPaint(root, hex) {
     const mats = Array.isArray(obj.material) ? obj.material : [obj.material];
     mats.forEach((m) => {
       if (!m || !m.color) return;
-      // Kenney atlas cars: body tends to be brighter/saturated midtones
-      const c = m.color;
-      const hsl = {};
-      c.getHSL(hsl);
-      const isDark = hsl.l < 0.18;
-      const isGlass = hsl.l > 0.55 && hsl.s < 0.15;
-      const isChrome = hsl.s < 0.12 && hsl.l > 0.35 && hsl.l < 0.7;
-      if (isDark || isGlass || isChrome) return;
-      if (hsl.s < 0.12 && hsl.l < 0.35) return;
-      // Paint likely body panels
-      if (hsl.s > 0.15 || (hsl.l > 0.25 && hsl.l < 0.75)) {
-        m.color.copy(target);
-        m.needsUpdate = true;
-      }
+      // Kenney cars share one atlas material — tint multiplies the colormap.
+      m.color.copy(target);
+      m.needsUpdate = true;
     });
   });
 }
