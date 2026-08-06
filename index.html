@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NITRO GARAGE — PS2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="scene"></canvas>
+      <div class="crt" aria-hidden="true"></div>
+      <div class="vignette" aria-hidden="true"></div>
+
+      <header class="hud-top">
+        <p class="brand">NITRO<br />GARAGE</p>
+        <p class="tagline">Select vehicle · Tune · Drive</p>
+      </header>
+
+      <aside class="hud-left">
+        <p class="panel-label">Paint</p>
+        <div class="swatches" id="swatches"></div>
+        <button type="button" class="hud-btn" id="btn-lights">Lights ON</button>
+        <button type="button" class="hud-btn" id="btn-spin">Spin ON</button>
+      </aside>
+
+      <footer class="hud-bottom">
+        <button type="button" class="nav-btn" id="prev-car" aria-label="Previous car">◀</button>
+        <div class="car-meta">
+          <p class="car-name" id="car-name">RACE</p>
+          <p class="hint">Drag to orbit · Scroll zoom · ← → switch</p>
+        </div>
+        <button type="button" class="nav-btn" id="next-car" aria-label="Next car">▶</button>
+      </footer>
+
+      <div class="loading" id="loading">
+        <p class="loading-brand">NITRO GARAGE</p>
+        <p class="loading-bar"><span id="load-fill"></span></p>
+        <p class="loading-text">LOADING…</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
