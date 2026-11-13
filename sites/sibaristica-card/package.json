@@ -1,0 +1,11 @@
+{
+  "name": "sibaristica-figma-card",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "python3 -m http.server 4173 --directory public",
+    "check": "node --check public/app.js && node --check src/worker.mjs && node --check scripts/build.mjs"
+  }
+}
