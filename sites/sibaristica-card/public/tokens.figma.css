@@ -1,0 +1,42 @@
+/* Values absent or invalid in the GitHub source. Figma node 19108:2756.
+   Spacing aliases resolve exclusively to tokens.generated.css from ../../tokens.json. */
+:root {
+  --font-sans: "Onest", system-ui, sans-serif;
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-size-small: 14px;
+  --font-size-caption: 12px;
+  --line-height-small: 20px;
+  --line-height-caption: 16px;
+  --letter-spacing-title: 1.6px;
+  --color-text: #000;
+  --color-notes: #333;
+  --color-muted: #6c6864;
+  --color-icon: #1e1e1e;
+  --color-white: #fff;
+  --color-media: #f6f6f3;
+  --color-tag: #eaeae7;
+  --color-badge: #27455c;
+  --color-canvas: #ededed;
+  --card-width: 420px;
+  --card-media-ratio: 420 / 463.672;
+  --card-image-width: 73.9992857143%;
+  --card-image-ratio: 310.797 / 411.891;
+  --card-title-height: calc(var(--line-height-small) * 2);
+  --card-icon-size: var(--spacing-4);
+  --card-control-size: var(--spacing-10);
+  --card-bottom-space: var(--spacing-16);
+  --focus-width: 2px;
+  --focus-offset: 2px;
+  --motion-duration: 160ms;
+  --motion-ease: ease-out;
+  --preview-width: 720px;
+  --preview-backdrop: rgb(0 0 0 / 42%);
+  --preview-close-size: 28px;
+  --status-offset: var(--spacing-6);
+  --status-width: 420px;
+  --status-radius: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --motion-duration: 0ms; }
+}

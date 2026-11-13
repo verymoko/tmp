@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f6f3" />
+    <meta name="description" content="Бразилия Амазонская робуста Хуан Травейн (анаэробная). Тёмный шоколад, коньячные ноты, тёмный изюм. Кофе Sibaristica." />
+    <title>Бразилия Амазонская робуста — Sibaristica</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favorite.svg" />
+    <link rel="preload" href="./fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="./tokens.generated.css" />
+    <link rel="stylesheet" href="./tokens.figma.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main class="canvas" aria-label="Кофе Sibaristica">
+      <article class="product-card" data-node-id="19108:2756" aria-labelledby="product-title">
+        <div class="product-card__media" data-node-id="19108:2777">
+          <button class="product-card__preview" type="button" aria-label="Посмотреть упаковку кофе крупнее" aria-haspopup="dialog" aria-controls="product-preview" data-preview>
+            <img class="product-card__image" src="./assets/coffee-brazil.png" alt="Бордовая пачка кофе Sibaristica" width="311" height="412" fetchpriority="high" data-node-id="19108:2779" />
+          </button>
+          <span class="product-card__badge" data-node-id="19108:2780">Новинка</span>
+          <button class="favorite" type="button" aria-label="В избранное: Бразилия Амазонская робуста Хуан Травейн (анаэробная)" aria-pressed="false" data-favorite data-node-id="19108:2782">
+            <img src="./assets/favorite.svg" width="16" height="16" alt="" />
+          </button>
+        </div>
+        <div class="product-card__details" data-node-id="19108:2758">
+          <div class="product-card__heading">
+            <h1 id="product-title">Бразилия Амазонская робуста Хуан Травейн (анаэробная)</h1>
+            <p class="product-card__price">800&nbsp;₽</p>
+          </div>
+          <p class="product-card__notes">Тёмный шоколад, коньячные ноты, тёмный изюм</p>
+          <ul class="product-card__tags" aria-label="Характеристики кофе">
+            <li>Натуральная анаэробная</li>
+            <li>Робуста 100%</li>
+            <li>Микролот</li>
+          </ul>
+        </div>
+      </article>
+    </main>
+    <dialog class="preview" id="product-preview" aria-labelledby="preview-title">
+      <button class="preview__close" type="button" aria-label="Закрыть просмотр" data-close>×</button>
+      <img class="preview__image" src="./assets/coffee-brazil.png" width="311" height="412" alt="Упаковка кофе Sibaristica крупным планом" />
+      <div class="preview__details">
+        <h2 id="preview-title">Бразилия Амазонская робуста Хуан Травейн (анаэробная)</h2>
+        <p>Тёмный шоколад, коньячные ноты, тёмный изюм</p>
+        <p class="product-card__price">800&nbsp;₽</p>
+      </div>
+    </dialog>
+    <div class="status" role="status" aria-live="polite" aria-atomic="true" data-status></div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "repository": "https://github.com/verymoko/tmp",
+  "path": "tokens.json",
+  "blob": "24cd401724bf9a4f9e05ea594b59d8ecd8806b91",
+  "sourceUrl": "https://github.com/verymoko/tmp/blob/main/tokens.json",
+  "blobUrl": "https://api.github.com/repos/verymoko/tmp/git/blobs/24cd401724bf9a4f9e05ea594b59d8ecd8806b91",
+  "tokens": [
+    "spacing/0",
+    "spacing/1",
+    "spacing/2",
+    "spacing/3",
+    "spacing/4",
+    "spacing/5",
+    "spacing/6",
+    "spacing/8",
+    "spacing/10",
+    "spacing/12",
+    "spacing/16"
+  ],
+  "figma": {
+    "fileKey": "gFlYUy3WbjTYnR5ViiC1kL",
+    "nodeId": "19108:2756"
+  }
+}

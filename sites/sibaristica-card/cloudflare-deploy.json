@@ -1,0 +1,10 @@
+{
+  "script_name": "sibaristica-card-19108",
+  "main_module": "worker.mjs",
+  "compatibility_date": "2026-11-13",
+  "observability": {
+    "enabled": true,
+    "logs": { "enabled": true, "invocation_logs": true },
+    "traces": { "enabled": true }
+  }
+}
